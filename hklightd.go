@@ -33,7 +33,7 @@ func main() {
 		}
 	})
 
-	t, err := hc.NewIPTransport(hc.Config{Pin: "32191123"}, acc.Accessory)
+	t, err := hc.NewIPTransport(hc.Config{Pin: "32191123", Port: "12345"}, acc.Accessory)
 	if err != nil {
 		log.Fatal(err)
 	}
